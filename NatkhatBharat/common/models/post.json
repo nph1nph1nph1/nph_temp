@@ -1,0 +1,41 @@
+{
+  "name": "Post",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "IPAddress": {
+      "type": "string",
+      "required": true
+    },
+    "creationDate": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "location": {
+      "type": "geopoint"
+    },
+    "isAlertOn": {
+      "type": "boolean"
+    },
+    "mediaType": {
+      "type": "string"
+    },
+    "postId": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

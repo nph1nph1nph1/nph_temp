@@ -1,0 +1,42 @@
+{
+  "name": "Like",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "createdBy": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "creationDate": {
+      "type": "string",
+      "required": true
+    },
+    "postId": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "likeId": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "parentId": {
+      "type": "number"
+    },
+    "commentId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

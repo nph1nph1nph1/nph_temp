@@ -1,0 +1,43 @@
+{
+  "name": "Notification",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "creationDate": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "readStatus": {
+      "type": "boolean",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "userId": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "notificationId": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

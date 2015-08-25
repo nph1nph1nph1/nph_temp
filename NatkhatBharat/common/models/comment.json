@@ -1,0 +1,43 @@
+{
+  "name": "Comment",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "IPAddress": {
+      "type": "string",
+      "required": true
+    },
+    "createdBy": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "creationDate": {
+      "type": "date",
+      "required": true
+    },
+    "parentId": {
+      "type": "number",
+      "required": true
+    },
+    "commentId": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "postId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Alert": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Comment": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "FollowMe": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Like": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Location": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Notification": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Post": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Profile": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Watchers": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}

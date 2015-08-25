@@ -1,0 +1,33 @@
+{
+  "name": "FollowMe",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "IPAddress": {
+      "type": "string",
+      "required": true
+    },
+    "creationDate": {
+      "type": "date",
+      "required": true
+    },
+    "followId": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "location": {
+      "type": "geopoint",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

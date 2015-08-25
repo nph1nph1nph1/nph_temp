@@ -1,0 +1,54 @@
+{
+  "name": "Alert",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "alertId": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "createdBy": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "creationDate": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "helpers": {
+      "type": [
+        "string"
+      ]
+    },
+    "personsAffected": {
+      "type": "string"
+    },
+    "postId": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "relatedAlertId": {
+      "type": "string"
+    },
+    "relatedLink": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
